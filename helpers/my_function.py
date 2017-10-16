@@ -55,6 +55,7 @@ def get_pos_neg_texts(data,i):
 
   return IDX
   
+  
 def get_idx(list,list2):
   """Compare two list"""
   dict1=defaultdict(int)
@@ -66,3 +67,11 @@ def get_idx(list,list2):
       IDX.append(i)
     
   return IDX
+  
+  
+def cat_subset_by_index(List,index):
+  """Get subset of feature"""
+  features=[]
+  for i in index:
+    features.append(List[i])
+  return features
